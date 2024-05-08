@@ -22,12 +22,12 @@ public class getGCD {
         return res;
     }
     //Efficient Approach - Euclideans Theorem
-    private static int getGCDApproach2(int a, int b){
+    public static int getGCDApproach2(int a, int b){
         int n = Math.max(a,b);
         int m = Math.min(a,b);
-        int q = 0, r = 0;
+        int r = 0;
         while(m != 0){
-            q = n/m;r = n%m;
+            r = n%m;
             n=m;m=r;
         }
         return n;
