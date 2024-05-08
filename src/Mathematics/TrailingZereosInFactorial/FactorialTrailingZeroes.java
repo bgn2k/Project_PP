@@ -19,7 +19,7 @@ public class FactorialTrailingZeroes {
         int factorial = fact(n);
         System.out.println("Factorial: " + factorial);
         int count = 0;
-        while (factorial % 10 == 0) {
+        while (factorial % 10 == 0) { //120 0 === 0 count 1 & 120/10 12
             count++;
             factorial = factorial / 10;
         }
