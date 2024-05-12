@@ -6,7 +6,7 @@ public class convertBits {
     public static void main(String[] args) {
         int option, reRun;
         do {
-            System.out.println("Enter 1 for Decimal To Binary\nEnter 2 for Binary To Decimal: ");
+            System.out.print("Enter 1 for Decimal To Binary\nEnter 2 for Binary To Decimal: ");
             Scanner scan = new Scanner(System.in);
             option = scan.nextInt();
             if (option == 1) {
