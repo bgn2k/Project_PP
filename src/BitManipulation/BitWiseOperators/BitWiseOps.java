@@ -5,5 +5,10 @@ public class BitWiseOps {
         System.out.println(5 | 9);
         System.out.println(5 & 9);
         System.out.println(5 ^ 9);
+        System.out.println(5 << 1);
+        System.out.println(5 >> 1);
+        System.out.println(5 >> 2);
+        System.out.println(-5 >> 1);
+        System.out.println(-5 >>> 1);
     }
 }

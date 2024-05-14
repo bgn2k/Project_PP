@@ -28,7 +28,7 @@ public class convertBits {
 
     }
 
-    private static int getDecimalEquivalent(String n) {
+    public static int getDecimalEquivalent(String n) {
         int output = 0;
         int power = 1;
         for (int i = n.length() - 1; i >= 0; i--) {
@@ -40,7 +40,7 @@ public class convertBits {
         return output;
     }
 
-    private static String getBinayEquivalent(int n) {
+    public static String getBinayEquivalent(int n) {
         int r;
         String binary = "";
         while (n >= 1) {
