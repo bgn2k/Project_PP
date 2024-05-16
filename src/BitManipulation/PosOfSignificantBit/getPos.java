@@ -17,11 +17,14 @@ public class getPos {
     }
 
     public static int getBetterSoln(int n) {
+        if(n == 0){
+            return 0;
+        }
         return (int)(Math.log10(n ^ (n & n - 1))/Math.log10(2)) + 1;
     }
 
     private static int getAnswer(int n) {
-        System.out.print("Binary Equivalent of "+ n+": ");
+        // System.out.print("Binary Equivalent of "+ n+": ");
         convertBits newObj = new convertBits();
         String binaryEq = newObj.getBinayEquivalent(n);
         System.out.print(binaryEq);
