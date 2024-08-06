@@ -35,7 +35,6 @@ and so on
 So, arrT becomes {3, 4, 2, 0, 1}
 
 */
-//        System.out.println(3 % 4);
         int arr[] = getInput.getArrayInput();
         System.out.println("Given Array: ");
         for (int i : arr) {
@@ -48,8 +47,20 @@ So, arrT becomes {3, 4, 2, 0, 1}
     }
 
     private static void getEfficientMethod(int[] arr) {
-        System.out.println("\nYet To Write The Method");
-        System.out.println(3 % 5);
+        int n = arr.length;
+        //Encoding the values
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = arr[i] + (arr[arr[i]] % n) * n;
+        }
+        //Decoding the values
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = arr[i]/ arr.length;
+        }
+        System.out.println("\nEfficient Method's Answer");
+        for (int i :arr
+             ) {
+            System.out.print(i+" ");
+        }
     }
 
     private static void getNaiveMethod(int[] arr) {
@@ -57,7 +68,7 @@ So, arrT becomes {3, 4, 2, 0, 1}
         for(int i = 0;i<arr.length;i++){
             temp[i] = arr[arr[i]];
         }
-        System.out.println("");
+        System.out.println("\nNaive Method's Answer");
         for (int i:temp) {
             System.out.print(i+" ");
         }
