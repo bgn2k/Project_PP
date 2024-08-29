@@ -19,4 +19,16 @@ public class getInput {
 //        }
         return arr;
     }
+    public static void printArray(int[] arr, boolean isEfficient){
+        if(isEfficient){
+            System.out.println("\nEfficient Method: ");
+        }else{
+            System.out.println("\nNaive Method: ");
+        }
+        System.out.println("Answer : ");
+        for (int i: arr
+             ) {
+            System.out.print(i+" ");
+        }
+    }
 }
