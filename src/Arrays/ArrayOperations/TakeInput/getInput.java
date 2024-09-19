@@ -19,6 +19,12 @@ public class getInput {
 //        }
         return arr;
     }
+    public static int getSearchElement(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter target value: ");
+        int target = scanner.nextInt();
+        return target;
+    }
     public static void printArray(int[] arr, boolean isEfficient){
         if(isEfficient){
             System.out.println("\nEfficient Method: ");
