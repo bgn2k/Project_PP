@@ -15,7 +15,8 @@ public class CountOfOccurrence {
         int[] ans = new int[2];
         ans[0] = IndexOfFirstAndLastOccurrence.binSearch(arr, target, true);
         ans[1] = IndexOfFirstAndLastOccurrence.binSearch(arr, target ,false);
-
+        if(ans[0] == -1 && ans[1] == -1)
+            return 0;
         return (ans[1] - ans[0]) + 1;
     }
 }
