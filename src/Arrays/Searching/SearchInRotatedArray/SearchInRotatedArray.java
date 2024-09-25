@@ -18,7 +18,7 @@ public class SearchInRotatedArray {
                 return mid;
             if(arr[low] == arr[mid] && arr[mid] == arr[high]){
                 low++;high--;
-            }else if(arr[low] <= arr[mid]){
+            }else if(arr[low] <= arr[mid]){ // This checks which side of the array is sorted
                 if(x >= arr[low] && x < arr[mid])
                     high = mid - 1;
                 else
